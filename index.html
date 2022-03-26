@@ -1,66 +1,124 @@
-
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>MobileNet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <ol>
 
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+            <h1>Image Testing App</h1>
+            <div class = "text_imgsresult">
+                <li>
+                    <b Test Image - ></b><img src = "download (14).jfif" class = "img-responsive">
+                </li>
+                <h4>Microsoft Azure Output:
+                    <span>A banana sitting on top of a wooden table</span>
+                </h4>
+                <h4>Mobilenet Output:
+                    <span>Banana</span>
+                </h4>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
+            <li>
+                <b Test Image - ></b><img src = "unnamed.jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A bag sitting on top of a wooden table</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Mail bag, postbag</span>
+            </h4>
 
-  <body>
-    <center>
-      <div class = "col-xs-12 header_div">
-        <h2>Image Identification App
-          <img src ="logo.gif">
-        </h2>
-      </div>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (1).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>QR Code</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Envelope</span>
+            </h4>
 
-      <div class = "col-sm-6 col-xs-12 main_div">
-        <label>Webcam View</label>
-        <div id = "camera"></div> 
-        <button onclick = "take_snapshot();" class = "btn btn-info">Capture Image</button>
-      </div>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (2).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A close up of a blue background</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Syringe</span>
+            </h4>
 
-      <div class = "col-sm-6 col-xs-12 main_div">
-        <label>Identify Image</label>
-        <div id = "result"></div>
-        <button onclick = "check();" class="btn btn-success">Identify Image</button>
-      </div>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (3).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A wooden table</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Sunglasses, dark glasses, shades</span>
+            </h4>
 
-     
-        
-    </center>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (4).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A knife sitting on top of a wooden table</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Ruler</span>
+            </h4>
 
-    <div class = "col-xs-12 footer_div">
-      <h4 class = "col-sm-6 col-xs-12">
-        <img src = "blub.gif">
-        <span id = "object_name"></span>
-      </h4>
-    </div>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (5).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>Undefined</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Bucket</span>
+            </h4>
 
-    <div class = "copyright_footer">
-      Developed by Karthik
-    </div>
+            <li>
+                <b Test Image - ></b><img src = "unnamed (6).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A knife sitting on top of a wooden table</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Vacuum</span>
+            </h4>
 
+            <li>
+                <b Test Image - ></b><img src = "unnamed (7).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>Text letter</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Menu</span>
+            </h4>
 
+            <li>
+                <b Test Image - ></b><img src = "unnamed (8).jpg" class = "img-responsive">
+            </li>
+            <h4>Microsoft Azure Output:
+                <span>A wooden surface</span>
+            </h4>
+            <h4>Mobilenet Output:
+                <span>Ruler</span>
+            </h4>
+
+        <div class = "result">
+            <h4>Result - </h4>
+            <hr>
+            <h4>The Mobilenet model predicted one more object correctly than Microsoft Azure.</h4>
+        </div>
     
-<script src="main.js"></script>
-  </body>
+            </div>
+    
+            <hr>
+        </ol>
+    </body>
+    
 </html>
-
-
-
-
-
-
-
-
- 
-
